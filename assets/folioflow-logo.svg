@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145 64" role="img" aria-labelledby="title">
+  <title id="title">Folioflow</title>
+  <text x="3" y="42" fill="#F1F0EA" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="31" font-style="italic" font-weight="680" letter-spacing="-1.55">Folioflow</text>
+  <path d="M6 49c27 3 86 3 133-2" fill="none" stroke="#d6ff61" stroke-linecap="round" stroke-width="1.5" opacity=".7"/>
+</svg>
