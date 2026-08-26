@@ -20,9 +20,9 @@
 
 ### macOS — Apple Silicon
 
-[![Download Folioflow DMG](https://img.shields.io/badge/Download-Folioflow%20for%20macOS-c9f35b?style=for-the-badge&logo=apple&logoColor=111111)](https://github.com/hanifb1360/Folioflow-Releases/releases/download/v0.1.0-build.3/Folioflow_0.1.0_aarch64.dmg)
+[![Download Folioflow DMG](https://img.shields.io/badge/Download-Folioflow%20for%20macOS-c9f35b?style=for-the-badge&logo=apple&logoColor=111111)](https://github.com/hanifb1360/Folioflow-Releases/releases/download/v0.1.0-build.4/Folioflow_0.1.0_aarch64.dmg)
 
-The current preview release is **v0.1.0-build.3**. It supports Apple Silicon Macs (M1 and later).
+The current preview release is **v0.1.0-build.4**. It supports Apple Silicon Macs (M1 and later).
 
 > Folioflow is currently a prerelease. Your feedback on the editing workflow, effects, and exporting is especially welcome.
 
