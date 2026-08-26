@@ -20,9 +20,9 @@
 
 ### macOS — Apple Silicon
 
-[![Download Folioflow DMG](https://img.shields.io/badge/Download-Folioflow%20for%20macOS-c9f35b?style=for-the-badge&logo=apple&logoColor=111111)](https://github.com/hanifb1360/Folioflow-Releases/releases/download/v0.1.0-build.4/Folioflow_0.1.0_aarch64.dmg)
+[![Download Folioflow DMG](https://img.shields.io/badge/Download-Folioflow%20for%20macOS-c9f35b?style=for-the-badge&logo=apple&logoColor=111111)](https://github.com/hanifb1360/Folioflow-Releases/releases/download/v0.1.1-build.6/Folioflow_0.1.1_aarch64.dmg)
 
-The current preview release is **v0.1.0-build.4**. It supports Apple Silicon Macs (M1 and later).
+The current preview release is **v0.1.1-build.6**. It supports Apple Silicon Macs (M1 and later); its Export Engine is included.
 
 > Folioflow is currently a prerelease. Your feedback on the editing workflow, effects, and exporting is especially welcome.
 
@@ -60,16 +60,6 @@ The app centres the vertical composition, with the media library on the left, de
 ### First launch on macOS
 
 Because Folioflow is currently distributed as a prerelease, macOS may ask you to confirm the first launch. If it does, Control-click the app, choose **Open**, then confirm.
-
-### FFmpeg
-
-Folioflow uses FFmpeg to create the final video. Install FFmpeg with Homebrew:
-
-```sh
-brew install ffmpeg
-```
-
-If FFmpeg is installed somewhere else, set the `FOLIOFLOW_FFMPEG_PATH` environment variable to its executable path.
 
 ## Release notes
 
