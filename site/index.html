@@ -1,1 +1,73 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Folioflow — still images in motion</title><style>body{margin:0;background:#11110f;color:#f1f0ea;font:16px system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:7rem 2rem}h1{font-size:clamp(3rem,10vw,7rem);letter-spacing:-.08em;margin:0}p{max-width:38rem;color:#b9b8ae;font-size:1.25rem;line-height:1.55}.lime{color:#c9f35b}a{display:inline-block;background:#c9f35b;color:#11110f;padding:1rem 1.35rem;border-radius:.6rem;font-weight:800;text-decoration:none;margin:1rem 0 4rem}.shot{width:100%;border:1px solid #35352f;border-radius:1rem}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.card{border:1px solid #35352f;border-radius:1rem;padding:1.2rem}.card b{display:block;color:#c9f35b;margin-bottom:.5rem}@media(max-width:700px){.grid{grid-template-columns:1fr}}</style></head><body><main><div class="lime">FOLIOFLOW / MACOS</div><h1>Still images.<br>In motion.</h1><p>A focused desktop editor for building polished vertical reels from artwork, motion, transitions, and music.</p><a id="download" href="https://github.com/hanifb1360/Folioflow-Releases/releases">Download for macOS</a><img class="shot" src="../assets/screenshots/editor-overview.jpg" alt="Folioflow editor"><div class="grid"><div class="card"><b>Image-first</b>Arrange artwork in a visual sequence.</div><div class="card"><b>Intentional motion</b>Control movement, focal point, easing, and transitions.</div><div class="card"><b>Export-ready</b>Built-in Export Engine. No terminal setup.</div></div></main><script>fetch('https://api.github.com/repos/hanifb1360/Folioflow-Releases/releases').then(r=>r.json()).then(rs=>{const r=rs.find(x=>x.prerelease||!x.draft),a=r?.assets.find(x=>x.name.endsWith('.dmg'));if(a){const b=document.querySelector('#download');b.href=a.browser_download_url;b.textContent=`Download ${r.tag_name} for macOS`}})</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#11110f">
+  <meta name="description" content="Folioflow turns still artwork into polished vertical reels with intentional motion, transitions, music, and one-click export.">
+  <title>Folioflow — Still images in motion</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="nav shell">
+    <a class="brand" href="#top" aria-label="Folioflow home"><img src="assets/folioflow-logo.svg" alt="Folioflow"></a>
+    <nav aria-label="Primary navigation"><a href="#workflow">Workflow</a><a href="#features">Features</a><a href="https://github.com/hanifb1360/Folioflow-Releases">GitHub</a></nav>
+    <a class="nav-download" id="nav-download" href="https://github.com/hanifb1360/Folioflow-Releases/releases">Download <span>↘</span></a>
+  </header>
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Desktop motion studio · macOS</p>
+        <h1>Still images.<br><em>In motion.</em></h1>
+        <p class="lede">Turn a collection of artwork into a composed vertical reel—shape every movement, transition, and beat without entering a crowded video editor.</p>
+        <div class="hero-actions">
+          <a class="button primary" id="download" href="https://github.com/hanifb1360/Folioflow-Releases/releases"><span class="button-label">Download for macOS</span><span class="button-arrow">↓</span></a>
+          <a class="button secondary" href="#workflow">See how it flows <span>→</span></a>
+        </div>
+        <p class="release-note"><span class="status-dot"></span><span id="release-label">Apple Silicon · Export engine included</span></p>
+      </div>
+      <div class="hero-stage reveal" data-delay="1">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-stack" aria-label="Geometric artwork moving through Folioflow">
+          <figure class="art-card card-back"><img src="assets/art/03-signal.svg" alt="Signal geometric artwork"></figure>
+          <figure class="art-card card-mid"><img src="assets/art/02-fold.svg" alt="Fold geometric artwork"></figure>
+          <figure class="art-card card-front"><img src="assets/art/01-orbit.svg" alt="Orbit geometric artwork"></figure>
+        </div>
+        <div class="floating-chip chip-motion"><span class="chip-icon">↗</span><span><b>Slow zoom</b><small>100% intensity</small></span></div>
+        <div class="floating-chip chip-format"><b>9:16</b><small>1080 × 1920</small></div>
+      </div>
+    </section>
+    <section class="art-marquee" aria-label="Demo artwork gallery"><div class="marquee-track">
+      <span>IMAGE-FIRST</span><img src="assets/art/01-orbit.svg" alt=""><span>MOTION</span><img src="assets/art/02-fold.svg" alt=""><span>TRANSITIONS</span><img src="assets/art/03-signal.svg" alt=""><span>MUSIC</span><img src="assets/art/04-balance.svg" alt=""><span>EXPORT</span><img src="assets/art/05-pulse.svg" alt=""><span>FLOW</span><img src="assets/art/06-flow.svg" alt="">
+      <span aria-hidden="true">IMAGE-FIRST</span><img src="assets/art/01-orbit.svg" alt="" aria-hidden="true"><span aria-hidden="true">MOTION</span><img src="assets/art/02-fold.svg" alt="" aria-hidden="true"><span aria-hidden="true">TRANSITIONS</span><img src="assets/art/03-signal.svg" alt="" aria-hidden="true"><span aria-hidden="true">MUSIC</span><img src="assets/art/04-balance.svg" alt="" aria-hidden="true"><span aria-hidden="true">EXPORT</span><img src="assets/art/05-pulse.svg" alt="" aria-hidden="true"><span aria-hidden="true">FLOW</span><img src="assets/art/06-flow.svg" alt="" aria-hidden="true">
+    </div></section>
+    <section class="product shell" id="workflow">
+      <div class="section-heading reveal"><p class="eyebrow"><span></span> The workspace</p><h2>Everything the story needs.<br><em>Nothing it doesn’t.</em></h2><p>Folioflow keeps artwork, composition, timing, and motion in one calm workspace. Select a clip and every relevant control is already within reach.</p></div>
+      <div class="product-browser reveal" data-delay="1"><div class="window-bar"><i></i><i></i><i></i><span>Geometric Flow.folioflow</span></div><img id="product-shot" src="assets/screenshots/motion-inspector.jpg" alt="Folioflow workspace with the geometric demo project"></div>
+      <div class="shot-tabs" role="tablist" aria-label="Product screenshots">
+        <button class="shot-tab active" data-shot="assets/screenshots/motion-inspector.jpg" data-alt="Folioflow motion inspector and timeline" role="tab"><span>01</span>Motion workspace</button>
+        <button class="shot-tab" data-shot="assets/screenshots/geometric-overview.jpg" data-alt="Folioflow media gallery and composition preview" role="tab"><span>02</span>Artwork library</button>
+        <button class="shot-tab" data-shot="assets/screenshots/controlled-expand.jpg" data-alt="Folioflow controlled expand effect settings" role="tab"><span>03</span>Effect controls</button>
+      </div>
+    </section>
+    <section class="steps shell">
+      <article class="step reveal"><span class="step-number">01</span><div class="step-art"><img src="assets/art/02-fold.svg" alt="Fold artwork"></div><h3>Bring in the work</h3><p>Import images, see every source at a glance, and arrange the story as a visual sequence.</p></article>
+      <article class="step reveal" data-delay="1"><span class="step-number">02</span><div class="step-art"><img src="assets/art/05-pulse.svg" alt="Pulse artwork"></div><h3>Shape the movement</h3><p>Choose a motion style, set its intensity and focal point, then tune easing and transitions clip by clip.</p></article>
+      <article class="step reveal" data-delay="2"><span class="step-number">03</span><div class="step-art"><img src="assets/art/06-flow.svg" alt="Flow artwork"></div><h3>Soundtrack. Export.</h3><p>Preview with music and render a social-ready 1080 × 1920 H.264 video with the included export engine.</p></article>
+    </section>
+    <section class="features shell" id="features">
+      <div class="section-heading compact reveal"><p class="eyebrow"><span></span> Built for focus</p><h2>Precise where it matters.</h2></div>
+      <div class="feature-grid">
+        <article class="feature feature-wide reveal"><div><span class="feature-tag">Motion</span><h3>Movement with intention.</h3><p>Slow zooms, directional pans, controlled expansion, focal positioning, intensity, and easing—each clip gets its own behavior.</p></div><div class="motion-demo"><div class="focus-point"></div><div class="motion-frame one"></div><div class="motion-frame two"></div><div class="motion-frame three"></div></div></article>
+        <article class="feature reveal" data-delay="1"><span class="feature-tag">Preview</span><h3>Review one clip.</h3><p>Isolate an image and inspect its movement without repeatedly playing the complete sequence.</p><div class="mini-preview"><img src="assets/art/04-balance.svg" alt="Balance artwork preview"><button aria-label="Play preview">▶</button></div></article>
+        <article class="feature feature-accent reveal"><span class="feature-tag dark">Export</span><h3>No setup ritual.</h3><p>The export engine travels with the app. Make the reel, choose a destination, and finish.</p><div class="export-line"><span>Folioflow reel</span><b>MP4 ↗</b></div></article>
+        <article class="feature feature-dark reveal" data-delay="1"><span class="feature-tag">Sound</span><h3>Hear the final rhythm.</h3><p>Add a soundtrack, trim it, set the level, and listen while the complete sequence plays.</p><div class="waveform"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+      </div>
+    </section>
+    <section class="closing shell reveal">
+      <div class="closing-art"><img src="assets/art/01-orbit.svg" alt="Orbit artwork"><img src="assets/art/03-signal.svg" alt="Signal artwork"><img src="assets/art/06-flow.svg" alt="Flow artwork"></div>
+      <div class="closing-copy"><p class="eyebrow"><span></span> Your work, moving</p><h2>Give still images<br><em>a sense of flow.</em></h2><p>Download the current macOS preview and build your first vertical story.</p><a class="button primary" id="closing-download" href="https://github.com/hanifb1360/Folioflow-Releases/releases"><span class="button-label">Download for macOS</span><span class="button-arrow">↓</span></a></div>
+    </section>
+  </main>
+  <footer class="shell"><img src="assets/folioflow-logo.svg" alt="Folioflow"><p>Still images in motion.</p><div><a href="https://github.com/hanifb1360/Folioflow-Releases/releases">Releases</a><a href="https://github.com/hanifb1360/Folioflow-Releases/issues">Feedback</a></div><small>© <span id="year"></span> Folioflow</small></footer>
+  <script src="app.js"></script>
+</body>
+</html>

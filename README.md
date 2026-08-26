@@ -7,9 +7,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/hanifb1360/Folioflow-Releases/releases"><strong>Download for macOS</strong></a>
+  <a href="https://hanifb1360.github.io/Folioflow-Releases/"><strong>Visit the Folioflow website</strong></a>
   &nbsp;·&nbsp;
-  <a href="#getting-started">Getting started</a>
+  <a href="https://github.com/hanifb1360/Folioflow-Releases/releases"><strong>Download for macOS</strong></a>
   &nbsp;·&nbsp;
   <a href="#features">Features</a>
 </p>
@@ -18,11 +18,11 @@
 
 ## Download
 
-### macOS — Apple Silicon
+### macOS — Apple Silicon (M1 or later)
 
-[![Download Folioflow DMG](https://img.shields.io/badge/Download-Folioflow%20for%20macOS-c9f35b?style=for-the-badge&logo=apple&logoColor=111111)](https://github.com/hanifb1360/Folioflow-Releases/releases/download/v0.1.1-build.6/Folioflow_0.1.1_aarch64.dmg)
+[![Download Folioflow DMG](https://img.shields.io/badge/Download-Latest%20Folioflow%20DMG-d1ff4f?style=for-the-badge&logo=apple&logoColor=111111)](https://hanifb1360.github.io/Folioflow-Releases/)
 
-The current preview release is **v0.1.1-build.6**. It supports Apple Silicon Macs (M1 and later); its Export Engine is included.
+The website always resolves the newest published DMG automatically. Folioflow includes its Export Engine, so users do not need to install FFmpeg or use Terminal.
 
 > Folioflow is currently a prerelease. Your feedback on the editing workflow, effects, and exporting is especially welcome.
 
@@ -30,7 +30,7 @@ The current preview release is **v0.1.1-build.6**. It supports Apple Silicon Mac
 
 Folioflow keeps the reel workflow deliberately simple: bring in your artwork, arrange it on a timeline, give each image an intentional movement, add a soundtrack, and export a finished vertical video. It is designed for portfolios, visual stories, and social-first presentations—not a crowded general-purpose video suite.
 
-![Folioflow editor workspace](assets/screenshots/editor-overview.jpg)
+![Folioflow editor workspace with six geometric artworks, a motion timeline, clip preview, and Inspector](assets/screenshots/motion-inspector.jpg)
 
 ## Features
 
@@ -46,7 +46,24 @@ Folioflow keeps the reel workflow deliberately simple: bring in your artwork, ar
 
 The app centres the vertical composition, with the media library on the left, detailed clip controls on the right, and the whole sequence below. Panels can be collapsed when you want more room to focus.
 
-![Folioflow soundtrack controls](assets/screenshots/soundtrack-controls.jpg)
+![Folioflow artwork library and vertical composition preview](assets/screenshots/geometric-overview.jpg)
+
+Every image can carry a different movement. The Inspector provides duration, motion style, intensity, easing, focal positioning, and transition controls while keeping a dedicated clip preview visible.
+
+![Folioflow Controlled Expand motion effect in the Inspector](assets/screenshots/controlled-expand.jpg)
+
+## Geometric Flow demo
+
+The presentation above uses a real Folioflow project built from six original SVG artworks. The complete set is included in [`assets/demo`](assets/demo) so the visual system behind the screenshots is transparent and reusable for release presentation work.
+
+<p align="center">
+  <img src="assets/demo/01-orbit.svg" alt="Orbit artwork" width="120" />
+  <img src="assets/demo/02-fold.svg" alt="Fold artwork" width="120" />
+  <img src="assets/demo/03-signal.svg" alt="Signal artwork" width="120" />
+  <img src="assets/demo/04-balance.svg" alt="Balance artwork" width="120" />
+  <img src="assets/demo/05-pulse.svg" alt="Pulse artwork" width="120" />
+  <img src="assets/demo/06-flow.svg" alt="Flow artwork" width="120" />
+</p>
 
 ## Getting started
 
